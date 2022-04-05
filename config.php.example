@@ -1,0 +1,17 @@
+<?php
+// database
+$host = 'localhost';
+$user = 'root';
+$pass = '';
+$db = 'main';
+
+$conn = mysqli_connect($host, $user, $pass, $db);
+if(!$conn){
+    echo 'Khong the ket noi CSDL';
+    die();
+}
+
+// define variables
+
+define('BOOTSTRAP_FOLDER_PATH', '/vendor/twbs/bootstrap/dist');
+

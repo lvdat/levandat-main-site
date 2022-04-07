@@ -23,10 +23,10 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" target="_blank" href="http://status.levandat.tech"><i class="fas fa-server"></i> Trạng thái server <i class="fas fa-xs fa-external-link-alt"></i></a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link active" href="https://github.com/lvdat/levandat-main-site" target="_blank"><i class="fab fa-github"></i> Github <i class="fas fa-xs fa-external-link-alt"></i></a>
                     </li>
                 </ul>
 
@@ -52,7 +52,7 @@
                             <i class="fas fa-list"></i> <b>Dịch vụ đang chạy</b>
                         </div>
                         <div class="card-body">
-                            <div class="text-center"><h2><i class="fas fa-circle-notch fa-spin"></i> Loading...</h2></div>    
+                            <div class="text-center"><h2><i class="fas fa-circle-notch fa-spin"></i> Đang tải...</h2></div>    
 
                         </div>
                     </div>

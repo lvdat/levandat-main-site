@@ -51,9 +51,8 @@
                         <div class="card-header bg-success text-white">
                             <i class="fas fa-list"></i> <b>Dịch vụ đang chạy</b>
                         </div>
-                        <div class="card-body">
-                            <div class="text-center"><h2><i class="fas fa-circle-notch fa-spin"></i> Đang tải...</h2></div>    
-
+                        <div class="card-body" id="server-running">
+                            <p class="text-center"><h2><i class="fas fa-circle-notch fa-spin"></i> Đang tải...</h2></p>
                         </div>
                     </div>
 
@@ -65,5 +64,20 @@
             </div>
         </div>
 
+    <script type="text/javascript">
+        // Data load javascript.
+        $.getJSON('/api.php?type=service', function(data){
+            $("#server-running").html('Hello');
+            console.log(data);
+            let oj = [];
+
+            for(let i in data)
+                oj.push([i, data[i]]);
+
+            console.log(oj);
+            console.log(oj[3][1][0][4]);
+        });
+
+    </script>
     </body>
 </html>

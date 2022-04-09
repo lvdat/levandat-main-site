@@ -20,7 +20,7 @@ if(!isset($_GET['type'])){
             $data['status'] = 'success';
             $data['code'] = '200';
             $data['des'] = 'Get all service data';
-            $data['data'] = getService();
+            $data['data'] = getServiceToArray();
         }
 
 
@@ -32,4 +32,4 @@ if(!isset($_GET['type'])){
 
 
 ?>
-<?=json_encode($data)?>
+<?=json_encode($data)."\n"?>

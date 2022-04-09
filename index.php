@@ -6,11 +6,13 @@
         <title>Hello, Welcome to levandat.tech!</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="<?=BOOTSTRAP_FOLDER_PATH."/css/bootstrap.min.css?v=".time()?>" />
+        <link rel="stylesheet" href="<?=ASSET_FOLDER_PATH."/css/main.css?v=".time()?>" />
         <script type="text/javascript" src="<?=BOOTSTRAP_FOLDER_PATH."/js/bootstrap.min.js?v=".time()?>"></script>
+        <script type="text/javascript" src="<?=ASSET_FOLDER_PATH."/js/load.js?v=".time()?>"></script>
         <script src="https://kit.fontawesome.com/805c912558.js" crossorigin="anonymous"></script>
         <script src="<?=ASSET_FOLDER_PATH."/js/jquery.min.js"?>" crossorigin="anonymous"></script>
     </head>
-    <body style="padding-top: 4.2em">
+    <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="#">
@@ -35,49 +37,32 @@
         </nav>
     
         <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="card text-center">
-                        <div class="card-body">
-                            <h2>Cảm ơn vì đã đến đây, giờ bạn muốn tìm gì?</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div class="row mt-2">
-                <div class="col-xs-12 col-md-8">
+                <div class="col-12 table-responsive">
 
-                    <div class="card">
-                        <div class="card-header bg-success text-white">
-                            <i class="fas fa-list"></i> <b>Dịch vụ đang chạy</b>
-                        </div>
-                        <div class="card-body" id="server-running">
-                            <p class="text-center"><h2><i class="fas fa-circle-notch fa-spin"></i> Đang tải...</h2></p>
-                        </div>
-                    </div>
+                    <table class="table service">
+                        <thead class="thead-dark">
+                            <tr class="text-center">
+                            <th scope="col">#</th>
+                            <th scope="col">Tên</th>
+                            <th scope="col">Mô tả</th>
+                            <th scope="col">URL</th>
+                            <th scope="col">Tình trạng</th>
+                            <th scope="col">Ping</th>
+                            </tr>
+                        </thead>
+                        <tbody id="server-running">
+                        </tbody>
+                    </table>
 
 
-                </div>
-                <div class="col-xs-12 col-md-4">
-                    test
                 </div>
             </div>
         </div>
 
     <script type="text/javascript">
         // Data load javascript.
-        $.getJSON('/api.php?type=service', function(data){
-            $("#server-running").html('Hello');
-            console.log(data);
-            let oj = [];
-
-            for(let i in data)
-                oj.push([i, data[i]]);
-
-            console.log(oj);
-            console.log(oj[3][1][0][4]);
-        });
-
+        load_service();
     </script>
     </body>
 </html>

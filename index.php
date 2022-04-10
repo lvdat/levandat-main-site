@@ -38,7 +38,7 @@
         <div class="container">
             <div class="row mt-2">
                 <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                    <i class="fas fa-circle-notch fa-spin"></i> Dữ liệu trong các bảng được làm mới mỗi <b>10 giây</b>, số liệu <b class="text-success">Ping</b> đến các máy chủ cập nhật tự động sau mỗi <b>20 giây</b>!
+                    <i class="fas fa-circle-notch fa-spin"></i> Dữ liệu trong các bảng và số liệu <b class="text-success">Ping</b> đến các máy chủ sẽ được cập nhật tự động sau mỗi <b>20 giây</b>!
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
                 <div class="col-12">
@@ -104,7 +104,7 @@
     <script type="text/javascript">
         // Data load javascript.
         load_service();
-        setInterval(load_service, 10000);
+        setInterval(load_service, 20000);
     </script>
     </body>
 </html>

@@ -25,13 +25,17 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" target="_blank" href="http://status.levandat.tech"><i class="fas fa-server"></i> Trạng thái server <i class="fas fa-xs fa-external-link-alt"></i></a>
-                    </li>
-                    <li class="nav-item">
                     <a class="nav-link active" href="https://github.com/lvdat/levandat-main-site" target="_blank"><i class="fab fa-github"></i> Github <i class="fas fa-xs fa-external-link-alt"></i></a>
                     </li>
                 </ul>
-
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="https://github.com/lvdat/levandat-main-site" target="_blank"><i class="fas fa-code-branch"></i> main</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active"><i class="far fa-xs fa-dot-circle"></i> 976ecc1</a>
+                    </li>
+                </ul>
                 </div>
             </div>
         </nav>
@@ -39,22 +43,26 @@
         <div class="container">
             <div class="row mt-2">
                 <div class="col-12 table-responsive">
-
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="/">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Dịch vụ đang chạy</li>
+                        </ol>
+                    </nav>
                     <table class="table service">
                         <thead class="thead-dark">
                             <tr class="text-center">
-                            <th scope="col">#</th>
-                            <th scope="col">Tên</th>
-                            <th scope="col">Mô tả</th>
-                            <th scope="col">URL</th>
-                            <th scope="col">Tình trạng</th>
-                            <th scope="col">Ping</th>
+                            <th scope="col" style="width:2%">#</th>
+                            <th scope="col" style="width:20%">Tên</th>
+                            <th scope="col" style="width:36%">Mô tả</th>
+                            <th scope="col" style="width:20%">URL</th>
+                            <th scope="col" style="width:12%">Tình trạng</th>
+                            <th scope="col" style="width:10%">Ping</th>
                             </tr>
                         </thead>
                         <tbody id="server-running">
                         </tbody>
                     </table>
-
 
                 </div>
             </div>

@@ -14,4 +14,4 @@ if(!$conn){
 // define variables
 
 define('BOOTSTRAP_FOLDER_PATH', '/vendor/twbs/bootstrap/dist');
-
+define('ASSET_FOLDER_PATH', '/asset');
